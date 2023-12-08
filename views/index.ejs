@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="shortForm" action="links/short" method="POST">
+        <input type="text" name="link" id="link">
+        <button type="submit">Short Link</button>
+    </form>
+    <ul id="links"></ul>
+    <ul>
+        <% for (var i = 0; i < links.length; i++) { %>
+            <li><%= links[i].short %></li>
+        <% } %>
+    </ul>
+    <script src="../public/js/script.js"></script>
+</body>
+</html>
